@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="title" content="清大特殊選才">
+    <meta name="author" content="清大特殊選才">
+    <meta name="copyright" content="清大特殊選才">
+    <meta name="robots" content="all">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/font-ccwork.css">
+    <link rel="stylesheet" href="./styles/spacing.css">
+    <link rel="stylesheet" href="./styles/swiper.css">
+    <link rel="stylesheet" href="./styles/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/breadcrumb.css">
+    <link rel="stylesheet" href="./styles/custom.css">
+    <script src="./script/jquery/jquery-3.5.1.js"></script>
+    <script src="./script/pagination/jquery.pagination.js"></script>
+    <script src="./script/timepicker/timepicker.js"></script>
+    <script src="./script/timepicker/timepicker-addon.js"></script>
+    <script src="./script/timepicker/timepicker-slide.min.js"></script>
+    <script src="./script/new/jquery.easing.1.3.js"></script>
+    <script src="./script/new/jquery.masonry.min.js"></script>
+    <script src="./script/new/scriptb3bf.js"></script>
+    <script src="./script/dropdown/bootstrap.min.js"></script>
+    <script src="./script/flexslider/jquery.flexslider.js"></script>
+    <script src="./script/goTop/jquery.ui.totop.js"></script>
+    <script src="./script/swiper.js"></script>
+    <script src="./script/imagesloaded/imagesloaded.js"></script>
+    <script src="./script/isotope/isotope.pkgd.js"></script>
+    <script src="./script/fancybox/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script src="./script/fancybox/jquery.fancybox.js"></script>
+    <script src="./script/imagesloaded/imagesloaded.js"></script>
+    <script src="./script/isotope/isotope.pkgd.js"></script>
+    <script src="./script/waypoints/jquery.waypoints.js"></script>
+    <script src="./script/skrollr/skrollr.js"></script>
+    <script src="./script/mesonry/masonry.pkgd.min.js"></script>
+    <script src="./script/form/jquery.form.js"></script>
+    <script src="./script/aos.js"></script>
+    <script src="./script/sweetalert2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.js"></script>
+    <script>
+      $(document).ready(function () {
+      
+      });
+    </script>
+    <title>司法院 台灣OO地方法院勞動調解委員評量表</title>
+    <link rel="stylesheet" href="./styles/swiper.min.css">
+    <link rel="stylesheet" href="./styles/application.css">
+    <link rel="stylesheet" href="./styles/statistics.css">
+    <link rel="stylesheet" href="./styles/forms.css">
+    <link rel="stylesheet" href="./styles/button.css">
+    <link rel="stylesheet" href="./styles/sweetalert.css">
+  </head>
+  <body class="ColorGreen">
+    <div class="body-layout">
+      <div class="zone zone-full" zonelayout="h-c1-s1000">
+        <div class="wrapper">
+          <div class="groove groove-1">
+            <div class="header logged card-header" id="header" data-style="2">
+              <div class="wrapper">
+                <h1 class="logo"><a href="index.html" title="" alt=""><img src="./images/logo-white.png" title="" alt=""></a></h1>
+                <ul class="menu login">
+                  <li><a class="member-button" href="javascript:;" title="" alt="">
+                      <div class="info-box"><span class="user-id">宇琪</span><span>歡迎回來</span></div>
+                      <div class="hamburger"><span></span></div></a>
+                    <ul class="menu member">
+                      <li><a href="form_evaluation_list.html" title="" alt="">勞動調解委員評量表</a></li>
+                      <li><a href="form_evaluation_list.html" title="" alt="">勞動調解委員統計表</a></li>
+                      <li><a href="form_evaluation_list.html" title="" alt="">勞動調解委員統計總表</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="member-button mobile">
+                  <div class="hamburger"><span></span></div>
+                </div>
+                <ul class="menu login mobile">
+                  <li class="member-menu"><a href="javascript:;" title="" alt="">
+                      <div class="info-box"><span class="user-id">宇琪</span><span>歡迎回來</span></div></a>
+                    <ul class="menu member">
+                      <li><a href="form_evaluation_list.html" title="" alt="">勞動調解委員評量表</a></li>
+                      <li><a href="form_evaluation_list.html" title="" alt="">勞動調解委員統計表</a></li>
+                      <li><a href="form_evaluation_list.html" title="" alt="">勞動調解委員統計總表</a>
+                        <ul class="menu sub">
+                          <li><a href="form_evaluation_list.html" title="" alt="">總表</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript">
+          $(document).ready(function () {
+              //- menu收合
+              $(function () {
+                  $('.menu > li').on('click', function(e) {
+                      var menu = $(this).find('> ul');
+                      e.stopPropagation();
+          
+                      if($(menu).is(':visible')) {
+                          menu.slideUp();
+                      } else {
+                          menu.slideDown(); 
+                      }
+                  });
+              });
+          
+              $(function() {
+                  $('.member-button').on('click', function() {
+                      var hbg = $(this).children('.hamburger')
+                      if (hbg.hasClass('open')) {
+                          hbg.removeClass('open');
+                          $('.mobile').removeClass('open');
+                      } else {
+                          hbg.addClass('open');
+                          $('.mobile').addClass('open');
+                      }
+                  });
+              });
+          });
+        </script>
+      </div>
+      <div class="zone zone-full zone-limited-1180">
+        <div class="wrapper">
+          <div class="groove groove-1">
+            <div class="card-common card-form card-form-statistics" data-style="1">
+              <div class="article-main">
+                <div class="article-center">
+                  <div class="article-title page">台灣OO地方法院勞動調解委員評量統計表</div>
+                  <div class="article-content">
+                    <ul class="forms search dropdown style2">
+                      <li>
+                        <div class="title">評量期間</div>
+                        <div class="input-content">
+                          <ul class="datepicker">
+                            <li>
+                              <input class="datepicker" type="text" name="start" placeholder="開始日期"><a class="datepicker"><i class="cc cc-calendar-today"></i></a>
+                            </li>
+                            <li>
+                              <input class="datepicker-end" type="text" name="end" placeholder="結束日期"><a class="datepicker-end"><i class="cc cc-calendar-today"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="title">調解委員</div>
+                        <div class="input-content">
+                          <div class="dropdown-list"><span>請選擇調解委員</span><i class="cc cc-sort-down"></i></div>
+                          <ul class="dropdown-options">
+                            <li>王衛哲</li>
+                            <li>李佳佳</li>
+                            <li>邱戚</li>
+                            <li>黃依敏</li>
+                            <li>藍薇郁</li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="button-box"><a href="#" title="" alt="">送出</a></div>
+                    <ul class="forms pri-title">
+                      <li>
+                        <div class="title">勞動調解委員姓名:<span class="default">王OO</span></div>
+                      </li>
+                      <li>
+                        <div class="title">組別:<span class="default">勞動組</span></div>
+                      </li>
+                      <li>
+                        <div class="title">總案件數量:<span class="default">2件</span></div>
+                      </li>
+                      <li>
+                        <div class="title">評量期間:<span class="default">109年01月31日 至 109年01月31日</span></div>
+                      </li>
+                    </ul>
+                    <ul class="forms twoinline">
+                      <li>
+                        <div class="title">是否推薦續聘</div>
+                        <div class="input-content">
+                          <ul class="cate">
+                            <li><span>強烈推薦</span>
+                              <ul class="info">
+                                <li class="title">件數</li>
+                                <li class="title">%</li>
+                                <li>2</li>
+                                <li>20.01</li>
+                              </ul>
+                            </li>
+                            <li><span>推薦</span>
+                              <ul class="info">
+                                <li class="title">件數</li>
+                                <li class="title">%</li>
+                                <li>2</li>
+                                <li>20.01</li>
+                              </ul>
+                            </li>
+                            <li><span>勉予推薦</span>
+                              <ul class="info">
+                                <li class="title">件數</li>
+                                <li class="title">%</li>
+                                <li>2</li>
+                                <li>20.01</li>
+                              </ul>
+                            </li>
+                            <li><span>不推薦</span>
+                              <ul class="info">
+                                <li class="title">件數</li>
+                                <li class="title">%</li>
+                                <li>2</li>
+                                <li>20.01</li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul class="forms twoinline multi">
+                      <div class="title full-width">整體評量項目/評等</div>
+                      <li>
+                        <div class="title">一、調解活動</div>
+                        <div class="input-content">
+                          <ul class="cate">
+                            <li><span>甚佳</span>
+                              <ul class="info">
+                                <li class="title">件數</li>
+                                <li class="title">%</li>
+                                <li>2</li>
+                                <li>20.01</li>
+                              </ul>
+                            </li>
+                            <li><span>佳</span>
+                              <ul class="info">
+                                <li class="title">件數</li>
+                                <li class="title">%</li>
+                                <li>2</li>
+                                <li>20.01</li>
+                              </ul>
+                            </li>
+                            <li><span>普通</span>
+                              <ul class="info">
+                                <li class="title">件數</li>
+                                <li class="title">%</li>
+                                <li>2</li>
+                                <li>20.01</li>
+                              </ul>
+                            </li>
+                            <li><span>欠佳</span>
+                              <ul class="info">
+                                <li class="title">件數</li>
+                                <li class="title">%</li>
+                                <li>2</li>
+                                <li>20.01</li>
+                              </ul>
+                            </li>
+                            <li><span>很差</span>
+                              <ul class="info">
+                                <li class="title">件數</li>
+                                <li class="title">%</li>
+                                <li>2</li>
+                                <li>20.01</li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="title">二、調解能力及品質</div>
+                        <div class="input-content">
+                          <ul class="cate">
+                            <li><span>甚佳</span>
+                              <ul class="info">
+                                <li class="title">件數</li>
+                                <li class="title">%</li>
+                                <li>2</li>
+                                <li>20.01</li>
+                              </ul>
+                            </li>
+                            <li><span>佳</span>
+                              <ul class="info">
+                                <li class="title">件數</li>
+                                <li class="title">%</li>
+                                <li>2</li>
+                                <li>20.01</li>
+                              </ul>
+                            </li>
+                            <li><span>普通</span>
+                              <ul class="info">
+                                <li class="title">件數</li>
+                                <li class="title">%</li>
+                                <li>2</li>
+                                <li>20.01</li>
+                              </ul>
+                            </li>
+                            <li><span>欠佳</span>
+                              <ul class="info">
+                                <li class="title">件數</li>
+                                <li class="title">%</li>
+                                <li>2</li>
+                                <li>20.01</li>
+                              </ul>
+                            </li>
+                            <li><span>很差</span>
+                              <ul class="info">
+                                <li class="title">件數</li>
+                                <li class="title">%</li>
+                                <li>2</li>
+                                <li>20.01</li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul class="forms twocol">
+                      <li class="list">
+                        <div class="title">正面列表<span>29件</span></div>
+                        <div class="input-content">
+                          <ul class="case">
+                            <li> <span>本於中立公正態度執行職務。</span><span>12件</span></li>
+                            <li> <span>協助委員會成員瞭解事實法令或達成共識。</span><span>12件</span></li>
+                            <li> <span>對勞動調解富有熱誠及耐心。</span><span>12件</span></li>
+                            <li> <span>善用調解技巧具說服能力。</span><span>12件</span></li>
+                            <li> <span>詳實閱卷,確實掌握案情。</span><span>12件</span></li>
+                            <li> <span>對調解程序或方案提出建設性建議。</span><span>12件</span></li>
+                            <li> <span>服從法官進行程序之指揮。</span><span>12件</span></li>
+                            <li> <span>調解過程尊重當事人調解意願。</span><span>12件</span></li>
+                            <li> <span>據實向法官報告具迴避事由。</span><span>12件</span></li>
+                            <li> <span>尊重當事人性別平權及多元文化差異。</span><span>12件</span></li>
+                            <li> <span>考量雙方當事人最佳利益,進行調解。</span><span>12件</span></li>
+                            <li> <span>其他。</span><span>12件</span></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="list">
+                        <div class="title">負面表列<span>29件</span></div>
+                        <div class="input-content">
+                          <ul class="case">
+                            <li> <span>無故擅自離開調解庭。</span><span>12件</span></li>
+                            <li> <span>調解前未詳閱卷證資料。</span><span>12件</span></li>
+                            <li> <span>無故不到場行調解程序。</span><span>12件</span></li>
+                            <li> <span>未能保守應秘密之事項。</span><span>12件</span></li>
+                            <li> <span>強迫當事人進行或成立調解。</span><span>12件</span></li>
+                            <li> <span>故意曲解法令或欺問當事人。</span><span>12件</span></li>
+                            <li> <span>未服從法官進行程序之指揮。</span><span>12件</span></li>
+                            <li> <span>未能與委員會成員溝通協調。</span><span>12件</span></li>
+                            <li> <span>詆毀中傷當事人。</span><span>12件</span></li>
+                            <li> <span>調解過程藉機招攬業務或謀取利益。</span><span>12件</span></li>
+                            <li> <span>詆毀中傷其他勞動調解委員。</span><span>12件</span></li>
+                            <li> <span>調解過程偏頗推薦機關團體。</span><span>12件</span></li>
+                            <li> <span>缺性別平權觀念或未尊重當事人多元文化差異。</span><span>12件</span></li>
+                            <li> <span>與委員會成員意見不同時,一味堅持己見,拒絕討論。</span><span>12件</span></li>
+                            <li> <span>民事訴訟法規定應迴避事由。</span><span>12件</span></li>
+                            <li> <span>其他。</span><span>12件</span></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="case-item">
+                        <div class="left">
+                          <div class="title">案號1(案由)</div>
+                          <div class="content">OOO年度OOO字第OOO號勞動調解事件</div>
+                        </div>
+                        <div class="right">
+                          <div class="title">內容</div>
+                          <div class="content">例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心</div>
+                        </div>
+                      </li>
+                      <li class="case-item">
+                        <div class="left">
+                          <div class="title">案號2(案由)</div>
+                          <div class="content">OOO年度OOO字第OOO號勞動調解事件</div>
+                        </div>
+                        <div class="right">
+                          <div class="title">內容</div>
+                          <div class="content">例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心</div>
+                        </div>
+                      </li>
+                      <li class="case-item">
+                        <div class="left">
+                          <div class="title">案號3(案由)</div>
+                          <div class="content">OOO年度OOO字第OOO號勞動調解事件</div>
+                        </div>
+                        <div class="right">
+                          <div class="title">內容</div>
+                          <div class="content">例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心</div>
+                        </div>
+                      </li>
+                      <li class="case-item">
+                        <div class="left">
+                          <div class="title">案號4(案由)</div>
+                          <div class="content">OOO年度OOO字第OOO號勞動調解事件</div>
+                        </div>
+                        <div class="right">
+                          <div class="title">內容</div>
+                          <div class="content">例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心<br>例如:對勞動調解富有熱誠及耐心</div>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul class="forms table">
+                      <div class="title full-width"><span>本股案件(甲股)</span></div>
+                      <li>
+                        <div class="table-box">
+                          <div class="thead">
+                            <div class="th">案號(案由)</div>
+                            <div class="th">內容</div>
+                            <div class="th">查看</div>
+                          </div>
+                          <div class="tr">
+                            <div class="td" data-title="案號(案由)" align="center" valign="middle">OOO年度OOO字第OOO號勞動調解事件</div>
+                            <div class="td" data-title="內容" align="center" valign="middle"><span>正面表列 1件</span><span>負面表列 1件</span></div>
+                            <div class="td" data-title="查看" align="center" valign="middle"><a href="#" title="" alt=""><i class="cc cc-search"></i></a></div>
+                          </div>
+                          <div class="tr">
+                            <div class="td" data-title="案號(案由)" align="center" valign="middle">OOO年度OOO字第OOO號勞動調解事件</div>
+                            <div class="td" data-title="內容" align="center" valign="middle"><span>正面表列 1件</span><span>負面表列 1件</span></div>
+                            <div class="td" data-title="查看" align="center" valign="middle"><a href="#" title="" alt=""><i class="cc cc-search"></i></a></div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="zone zone-full" zonelayout="h-c1-s1001">
+        <div class="wrapper">
+          <div class="groove groove-1">
+            <div class="footer card-footer" id="footer" data-style="1">
+              <div class="wrapper">
+                <div class="main-title">台灣 司法院</div>
+                <div class="info-outbox">
+                  <div class="info">
+                    <div class="width-2">
+                      <div>地址：300044新竹市光復路二段101號</div>
+                      <div>位置：校本部行政大樓二樓213室、207室</div>
+                    </div>
+                    <div class="width-3">
+                      <div>電話：(03)5712861 或(03)5715131 轉 3300</div>
+                      <div>傳真：(03)5721602 或 (03)-5743034</div>
+                      <div>Mail：<a href="mailto:adms@my.nthu.edu.tw" title="" alt="">adms@my.nthu.edu.tw</a></div>
+                    </div>
+                    <div class="width-1">
+                      <div>版權所有 © 台灣司法院 招生策略中心		</div>
+                    </div>
+                  </div>
+                  <div class="social-box"><a href="javascript:;" title="" alt=""><img src="./images/facebook.png" title="" alt=""></a><a href="javascript:;" title="" alt=""><img src="./images/youtube.png" title="" alt=""></a><a href="javascript:;" title="" alt=""><img src="./images/instagram.png" title="" alt=""></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./script/fileuploader/jquery.fileuploader.js"></script>
+<script>
+  $(document).ready(function () {
+      $('.dropdown-list').on('click', function(){
+          var $this = $(this);
+  
+          if($this.hasClass('open')) {
+              $this.removeClass('open');
+              $this.next('.dropdown-options').removeClass('open');
+          } else {
+              $this.addClass('open');
+              $this.next('.dropdown-options').addClass('open');
+          }
+      });
+      
+      $('.dropdown-options > li').on('click',function () {
+          var $this = $(this),
+              cTxt = $this.text(),
+              s = $this.parents('.input-content').children('.dropdown-list'),
+              sTxt = s.children('span');
+  
+              sTxt.text(cTxt)
+              $this.parents('.input-content').children('.dropdown-list').removeClass('open');
+              $this.parents('.input-content').children('.dropdown-options').removeClass('open');
+      });
+  
+      $('input.datepicker').datetimepicker({
+          timepicker:false,
+          lang: 'it',
+          format: 'Y/m/d',
+          todayButton:true,
+          onSelectDate:function(ct){getResult()},
+      });
+  
+      $('a.datepicker').on('click',function(){
+          $('.datepicker').datetimepicker('toggle');
+      });
+      
+      $('input.datepicker-end').datetimepicker({
+          timepicker:false,
+          lang: 'it',
+          format: 'Y/m/d',
+          todayButton:true,
+          onSelectDate:function(ct){getResult()},
+      });
+  
+      $('a.datepicker-end').on('click',function(){
+          $('.datepicker-end').datetimepicker('toggle');
+      });
+  });
+</script>

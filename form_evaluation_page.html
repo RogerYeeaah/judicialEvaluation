@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="title" content="清大特殊選才">
+    <meta name="author" content="清大特殊選才">
+    <meta name="copyright" content="清大特殊選才">
+    <meta name="robots" content="all">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/font-ccwork.css">
+    <link rel="stylesheet" href="./styles/spacing.css">
+    <link rel="stylesheet" href="./styles/swiper.css">
+    <link rel="stylesheet" href="./styles/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/breadcrumb.css">
+    <link rel="stylesheet" href="./styles/custom.css">
+    <script src="./script/jquery/jquery-3.5.1.js"></script>
+    <script src="./script/pagination/jquery.pagination.js"></script>
+    <script src="./script/timepicker/timepicker.js"></script>
+    <script src="./script/timepicker/timepicker-addon.js"></script>
+    <script src="./script/timepicker/timepicker-slide.min.js"></script>
+    <script src="./script/new/jquery.easing.1.3.js"></script>
+    <script src="./script/new/jquery.masonry.min.js"></script>
+    <script src="./script/new/scriptb3bf.js"></script>
+    <script src="./script/dropdown/bootstrap.min.js"></script>
+    <script src="./script/flexslider/jquery.flexslider.js"></script>
+    <script src="./script/goTop/jquery.ui.totop.js"></script>
+    <script src="./script/swiper.js"></script>
+    <script src="./script/imagesloaded/imagesloaded.js"></script>
+    <script src="./script/isotope/isotope.pkgd.js"></script>
+    <script src="./script/fancybox/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script src="./script/fancybox/jquery.fancybox.js"></script>
+    <script src="./script/imagesloaded/imagesloaded.js"></script>
+    <script src="./script/isotope/isotope.pkgd.js"></script>
+    <script src="./script/waypoints/jquery.waypoints.js"></script>
+    <script src="./script/skrollr/skrollr.js"></script>
+    <script src="./script/mesonry/masonry.pkgd.min.js"></script>
+    <script src="./script/form/jquery.form.js"></script>
+    <script src="./script/aos.js"></script>
+    <script src="./script/sweetalert2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.js"></script>
+    <script>
+      $(document).ready(function () {
+      
+      });
+    </script>
+    <title>司法院 台灣OO地方法院勞動調解委員評量表</title>
+    <link rel="stylesheet" href="./styles/swiper.min.css">
+    <link rel="stylesheet" href="./styles/application.css">
+    <link rel="stylesheet" href="./styles/forms.css">
+    <link rel="stylesheet" href="./styles/button.css">
+    <link rel="stylesheet" href="./styles/sweetalert.css">
+  </head>
+  <body class="ColorGreen">
+    <div class="body-layout">
+      <div class="zone zone-full" zonelayout="h-c1-s1000">
+        <div class="wrapper">
+          <div class="groove groove-1">
+            <div class="header logged card-header" id="header" data-style="2">
+              <div class="wrapper">
+                <h1 class="logo"><a href="index.html" title="" alt=""><img src="./images/logo-white.png" title="" alt=""></a></h1>
+                <ul class="menu login">
+                  <li><a class="member-button" href="javascript:;" title="" alt="">
+                      <div class="info-box"><span class="user-id">宇琪</span><span>歡迎回來</span></div>
+                      <div class="hamburger"><span></span></div></a>
+                    <ul class="menu member">
+                      <li><a href="form_evaluation_list.html" title="" alt="">勞動調解委員評量表</a></li>
+                      <li><a href="form_evaluation_list.html" title="" alt="">勞動調解委員統計表</a></li>
+                      <li><a href="form_evaluation_list.html" title="" alt="">勞動調解委員統計總表</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="member-button mobile">
+                  <div class="hamburger"><span></span></div>
+                </div>
+                <ul class="menu login mobile">
+                  <li class="member-menu"><a href="javascript:;" title="" alt="">
+                      <div class="info-box"><span class="user-id">宇琪</span><span>歡迎回來</span></div></a>
+                    <ul class="menu member">
+                      <li><a href="form_evaluation_list.html" title="" alt="">勞動調解委員評量表</a></li>
+                      <li><a href="form_evaluation_list.html" title="" alt="">勞動調解委員統計表</a></li>
+                      <li><a href="form_evaluation_list.html" title="" alt="">勞動調解委員統計總表</a>
+                        <ul class="menu sub">
+                          <li><a href="form_evaluation_list.html" title="" alt="">總表</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript">
+          $(document).ready(function () {
+              //- menu收合
+              $(function () {
+                  $('.menu > li').on('click', function(e) {
+                      var menu = $(this).find('> ul');
+                      e.stopPropagation();
+          
+                      if($(menu).is(':visible')) {
+                          menu.slideUp();
+                      } else {
+                          menu.slideDown(); 
+                      }
+                  });
+              });
+          
+              $(function() {
+                  $('.member-button').on('click', function() {
+                      var hbg = $(this).children('.hamburger')
+                      if (hbg.hasClass('open')) {
+                          hbg.removeClass('open');
+                          $('.mobile').removeClass('open');
+                      } else {
+                          hbg.addClass('open');
+                          $('.mobile').addClass('open');
+                      }
+                  });
+              });
+          });
+        </script>
+      </div>
+      <div class="zone zone-full zone-limited-1180">
+        <div class="wrapper">
+          <div class="groove groove-1">
+            <div class="card-common card-form" data-style="1">
+              <div class="article-main">
+                <div class="article-center">
+                  <div class="article-title page">台灣OO地方法院勞動調解委員評量表</div>
+                  <div class="article-content">
+                    <ul class="forms">
+                      <li class="radio">
+                        <div class="title">組別</div>
+                        <div class="input-content">
+                          <ul class="inner-form">
+                            <li>
+                              <input type="radio" id="worker" name="team" disabled>
+                              <label for="work">勞動組</label>
+                            </li>
+                            <li>
+                              <input type="radio" id="buss" name="team" checked disabled>
+                              <label for="buss">事業組</label>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="title">姓名</div>
+                        <div class="input-content">
+                          <ul class="inner-form">
+                            <li>
+                              <label for="name"></label>
+                              <input type="text" id="name" value="李子柒" disabled>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="title">案號</div>
+                        <div class="input-content">
+                          <ul class="inner-form">
+                            <li>
+                              <label for="name"></label>
+                              <input type="text" id="name" value="1234-5678-90" disabled>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="title">案由</div>
+                        <div class="input-content">
+                          <ul class="inner-form">
+                            <li>
+                              <label for="name"></label>
+                              <input type="text" id="name" value="OOO年度OOO字OOO號" disabled>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul class="forms dropdown">
+                      <li>
+                        <div class="title">是否推薦續為聘任</div>
+                        <div class="input-content">
+                          <div class="dropdown-list"><span>請點擊進行評分</span><i class="cc cc-sort-down"></i></div>
+                          <ul class="dropdown-options">
+                            <li>強烈推薦</li>
+                            <li>推薦</li>
+                            <li>勉予推薦</li>
+                            <li>不推薦</li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul class="forms dropdown style2">
+                      <li>
+                        <div class="subtitle">整體評量項目</div>
+                        <div class="subtitle">評等</div>
+                      </li>
+                      <li>
+                        <div class="title">一、調解活動</div>
+                        <div class="input-content">
+                          <div class="dropdown-list"><span>請點擊進行評分</span><i class="cc cc-sort-down"></i></div>
+                          <ul class="dropdown-options">
+                            <li>甚佳</li>
+                            <li>佳</li>
+                            <li>普通</li>
+                            <li>欠佳</li>
+                            <li>很差</li>
+                          </ul>
+                        </div><span class="note">(含是否準時出席、依法官進行之指揮、與他人互動之態度。)</span>
+                      </li>
+                      <li>
+                        <div class="title">二、調解能力及品質</div>
+                        <div class="input-content">
+                          <div class="dropdown-list"><span>請點擊進行評分</span><i class="cc cc-sort-down"></i></div>
+                          <ul class="dropdown-options">
+                            <li>甚佳</li>
+                            <li>佳</li>
+                            <li>普通</li>
+                            <li>欠佳</li>
+                            <li>很差</li>
+                          </ul>
+                        </div><span class="note">(含是否嫻熟相關專業知識經驗、調解事前準備、保持中立、運用調解技巧止息勞動紛爭等。)</span>
+                      </li>
+                    </ul>
+                    <ul class="forms check-box">
+                      <li>
+                        <div class="title">特殊事項記載</div>
+                        <div class="subtitle">※請就以下正、負面表列予以勾選(得複選)</div>
+                        <div class="input-content">
+                          <div class="subtitle">正面列表:</div>
+                          <ul>
+                            <li> 
+                              <input type="checkbox" id="option1-1">
+                              <label for="option1-1">本於中立公正態度執行職務。</label>
+                            </li>
+                            <li> 
+                              <input type="checkbox" id="option1-2">
+                              <label for="option1-2">協助委員會成員瞭解事實法令或達成共識。</label>
+                            </li>
+                            <li> 
+                              <input type="checkbox" id="option1-3">
+                              <label for="option1-3">對勞動調解富有熱誠及耐心。</label>
+                            </li>
+                            <li> 
+                              <input type="checkbox" id="option1-4">
+                              <label for="option1-4">善用調解技巧具說服能力。</label>
+                            </li>
+                            <li> 
+                              <input type="checkbox" id="option1-5">
+                              <label for="option1-5">詳實閱卷,確實掌握案情。</label>
+                            </li>
+                            <li> 
+                              <input type="checkbox" id="option1-6">
+                              <label for="option1-6">對調解程序或方案提出建設性建議。</label>
+                            </li>
+                            <li> 
+                              <input type="checkbox" id="option1-7">
+                              <label for="option1-7">服從法官進行程序之指揮。</label>
+                            </li>
+                            <li> 
+                              <input type="checkbox" id="option1-8">
+                              <label for="option1-8">調解過程尊重當事人調解意願。</label>
+                            </li>
+                            <li> 
+                              <input type="checkbox" id="option1-9">
+                              <label for="option1-9">據實向法官報告具迴避事由。</label>
+                            </li>
+                            <li> 
+                              <input type="checkbox" id="option1-10">
+                              <label for="option1-10">尊重當事人性別平權及多元文化差異。</label>
+                            </li>
+                            <li> 
+                              <input type="checkbox" id="option1-11">
+                              <label for="option1-11">考量雙方當事人最佳利益,進行調解。</label>
+                            </li>
+                            <li class="textarea">
+                              <textarea type="textarea" placeholder="其他"></textarea>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="input-content">
+                          <div class="subtitle">負面列表:</div>
+                          <ul>
+                            <li> 
+                              <input type="checkbox" id="option2-1">
+                              <label for="option2-1">無故擅自離開調解庭。</label>
+                            </li>
+                            <li> 
+                              <input type="checkbox" id="option2-2">
+                              <label for="option2-2">調解前未詳閱卷證資料。</label>
+                            </li>
+                            <li> 
+                              <input type="checkbox" id="option2-3">
+                              <label for="option2-3">無故不到場行調解程序。</label>
+                            </li>
+                            <li> 
+                              <input type="checkbox" id="option2-4">
+                              <label for="option2-4">未能保守應秘密之事項。</label>
+                            </li>
+                            <li> 
+                              <input type="checkbox" id="option2-5">
+                              <label for="option2-5">強迫當事人進行或成立調解。</label>
+                            </li>
+                            <li> 
+                              <input type="checkbox" id="option2-6">
+                              <label for="option2-6">故意曲解法令或欺問當事人。</label>
+                            </li>
+                            <li> 
+                              <input type="checkbox" id="option2-7">
+                              <label for="option2-7">未服從法官進行程序之指揮。</label>
+                            </li>
+                            <li> 
+                              <input type="checkbox" id="option2-8">
+                              <label for="option2-8">未能與委員會成員溝通協調。</label>
+                            </li>
+                            <li> 
+                              <input type="checkbox" id="option2-9">
+                              <label for="option2-9">詆毀中傷當事人。</label>
+                            </li>
+                            <li> 
+                              <input type="checkbox" id="option2-10">
+                              <label for="option2-10">調解過程藉機招攬業務或謀取利益。</label>
+                            </li>
+                            <li> 
+                              <input type="checkbox" id="option2-11">
+                              <label for="option2-11">詆毀中傷其他勞動調解委員。</label>
+                            </li>
+                            <li> 
+                              <input type="checkbox" id="option2-12">
+                              <label for="option2-12">調解過程偏頗推薦機關團體。</label>
+                            </li>
+                            <li> 
+                              <input type="checkbox" id="option2-13">
+                              <label for="option2-13">缺性別平權觀念或未尊重當事人多元文化差異。</label>
+                            </li>
+                            <li> 
+                              <input type="checkbox" id="option2-14">
+                              <label for="option2-14">與委員會成員意見不同時,一味堅持己見,拒絕討論。</label>
+                            </li>
+                            <li> 
+                              <input type="checkbox" id="option2-15">
+                              <label for="option2-15">未主動報告或隱匿有民事訴訟法規定應迴避事由。</label>
+                            </li>
+                            <li class="textarea">
+                              <textarea type="textarea" placeholder="其他"></textarea>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul class="end">
+                      <li class="date">填表時間:<span>中華民國 OOO年OO月OO日</span></li>
+                      <li class="note">註:
+                        <ol>
+                          <li>請法官審酌評量勞動調解委員行調解程序之表現, 並於調解事件終結後填寫。</li>
+                          <li>每張評量表限評量以為勞動調解委員。</li>
+                        </ol>
+                      </li>
+                    </ul>
+                    <div class="button-box"><a class="button-submit" href="#">送出</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="zone zone-full" zonelayout="h-c1-s1001">
+        <div class="wrapper">
+          <div class="groove groove-1">
+            <div class="footer card-footer" id="footer" data-style="1">
+              <div class="wrapper">
+                <div class="main-title">台灣 司法院</div>
+                <div class="info-outbox">
+                  <div class="info">
+                    <div class="width-2">
+                      <div>地址：300044新竹市光復路二段101號</div>
+                      <div>位置：校本部行政大樓二樓213室、207室</div>
+                    </div>
+                    <div class="width-3">
+                      <div>電話：(03)5712861 或(03)5715131 轉 3300</div>
+                      <div>傳真：(03)5721602 或 (03)-5743034</div>
+                      <div>Mail：<a href="mailto:adms@my.nthu.edu.tw" title="" alt="">adms@my.nthu.edu.tw</a></div>
+                    </div>
+                    <div class="width-1">
+                      <div>版權所有 © 台灣司法院 招生策略中心		</div>
+                    </div>
+                  </div>
+                  <div class="social-box"><a href="javascript:;" title="" alt=""><img src="./images/facebook.png" title="" alt=""></a><a href="javascript:;" title="" alt=""><img src="./images/youtube.png" title="" alt=""></a><a href="javascript:;" title="" alt=""><img src="./images/instagram.png" title="" alt=""></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./script/fileuploader/jquery.fileuploader.js"></script>
+<script>
+  $(document).ready(function () {
+      $('.dropdown-list').on('click', function(){
+          var $this = $(this);
+  
+          if($this.hasClass('open')) {
+              $this.removeClass('open');
+              $this.next('.dropdown-options').removeClass('open');
+          } else {
+              $this.addClass('open');
+              $this.next('.dropdown-options').addClass('open');
+          }
+      });
+      
+      $('.dropdown-options > li').on('click',function () {
+          var $this = $(this),
+              cTxt = $this.text(),
+              s = $this.parents('.input-content').children('.dropdown-list'),
+              sTxt = s.children('span');
+  
+              sTxt.text(cTxt)
+              $this.parents('.input-content').children('.dropdown-list').removeClass('open');
+              $this.parents('.input-content').children('.dropdown-options').removeClass('open');
+      });
+  });
+</script>
